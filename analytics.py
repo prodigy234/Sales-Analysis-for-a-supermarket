@@ -3,6 +3,10 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 from datetime import datetime
+import warnings
+
+warnings.filterwarnings("ignore")
+st.set_page_config(page_title="Sales Performance Dashboard", layout="wide")
 
 # Load Data
 @st.cache_data
