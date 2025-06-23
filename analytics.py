@@ -43,8 +43,8 @@ col3.metric("Avg. Rating", round(df_filtered['Rating'].mean(), 2))
 col4.metric("Gross Income", f"${df_filtered['gross income'].sum():,.2f}")
 
 # Tabs for Analysis
-tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
-    "📈 Trends", "📦 Products", "🌍 Regions", "🧍 Customers", "💳 Payments", "💡 Insights"
+tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs([
+    "📈 Trends", "📦 Products", "🌍 Regions", "🧍 Customers", "💳 Payments", "💡 Insights", "👨‍💻 About Developer"
 ])
 
 with tab1:
@@ -105,6 +105,25 @@ with tab6:
     8. ♦️ While observing peaks and dips in monthly sales, discounts should be offered during slower months to boost sales.
     9. 🔊 Although the average rating, indicated customer satisfaction, there's need to maintain or improve customer satisfaction by addressing common complaints.
     """)
+
+with tab7:
+    st.title("👨‍💻 About Developer")
+    st.markdown("# The brain behind this project")
+
+    st.image("Gbenga.jpg", width=300)
+    st.markdown("## **Kajola Gbenga**")
+
+    st.markdown(
+        """
+    \U0001F4C7 Certified Data Analyst | Certified Data Scientist | Certified SQL Programmer | Mobile App Developer | AI/ML Engineer
+
+    \U0001F517 [LinkedIn](https://www.linkedin.com/in/kajolagbenga)  
+    \U0001F4DC [View My Certifications & Licences](https://www.datacamp.com/portfolio/kgbenga234)  
+    \U0001F4BB [GitHub](https://github.com/prodigy234)  
+    \U0001F310 [Portfolio](https://kajolagbenga.netlify.app/)  
+    \U0001F4E7 k.gbenga234@gmail.com
+    """
+    )
 
 # Download filtered data
 st.sidebar.markdown("### 📥 Download")
